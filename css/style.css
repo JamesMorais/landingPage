@@ -11,17 +11,36 @@
     --color-white: #fff;
     --color-dark:#464A8C;
 }
+/*body, html {height:100%;}*/
 body{
-    background: linear-gradient(90deg, #f1f1f1 0%, #cfb6f283 100%);
+   /*background: linear-gradient(90deg, #f1f1f1 0%, #cfb6f2c6 100%);*/
+   background: linear-gradient(90deg, #F2F2F2 0%, #cfb6f283 100%);
+   /* background: linear-gradient(90deg, #f1f1f1 0%, #cfb6f2c6 100%);*/
     padding: 0 1rem;
 }
-header#cabecalho img#logo {
+.caixao{
+    width: 100%;
+    height: 10rem;
+}
+.caixa{
+    display: flex;
+    justify-content: space-around;
+    align-items:start;
+}
+header .button{
+    background-color: #8F8EF2;
+}
+/*div.wrap {height:100%; overflow:hidden;}*/
+/*body {overflow: hidden; }*/
+
+/*header#cabecalho img#logo {
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
-}
-header{
+}*/
+
+header, .hero-section{
     border-color: var(--color-dark);
     border-style: solid;
     border-width: 0 1px 1px 1px;
@@ -45,12 +64,13 @@ header img{
     text-decoration: none;
 }*/
 
-header nav a:nth-child(2n-1){
+/*header nav a:nth-child(2n-1){
     text-align: right;
-}
-main{
+}*/
+/*main{
     padding: 0 3rem 0 3rem;
-}
+}*/
+
 .buttonNovo{
     display: flex;
     align-items: center;
@@ -73,13 +93,15 @@ main{
     background-color: var(--color-primary);
 }
 .hero-section{
-    padding-right: 0;
-    padding-bottom: 14rem;
+    padding: 4rem 3rem 4rem 3rem;
+    gap: 3rem;
+    /*padding-right: 0;
+    padding-bottom: 4rem;*/
 
 }
 .hero-section img{
     display: flex;
-    margin: 7rem 0 7rem auto;
+    margin: 7rem 0 4.5rem auto;
     max-width: 100%;
 }
 .hero-section #ultimo{
@@ -155,14 +177,24 @@ p{
     header img{
         margin: 0;
     }
+    body, html {height:100%;}
+    div.wrap {height:100%; overflow:hidden;}
+    .hero-section img{
+        display: flex;
+        margin: 7rem 0 4.5rem 5rem;
+        max-width: 100%;
+    }
+    header{
+        padding-right: 12rem;
+    }      
 }
 @media screen and (min-width: 72rem){
 	.container{
         display: flex;
         align-items: center;
         margin: 0 auto;
-        max-width: 50rem;
-        padding-left: 150px;
+        max-width:50rem;
+        padding-left: 250px;
     }
     .row-reverse{
         flex-direction: row-reverse;
