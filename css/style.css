@@ -32,9 +32,24 @@ header img{
     display: block;
     margin: 1rem auto;
 }
+/*header nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr1;
+    margin: 1rem auto 0;
+
+}*/
+/*nav a{
+    color: var(--colo-black);
+    font-size: 1.25rem;
+    padding: .5rem;
+    text-decoration: none;
+}*/
 
 header nav a:nth-child(2n-1){
     text-align: right;
+}
+main{
+    padding: 0 3rem 0 3rem;
 }
 .buttonNovo{
     display: flex;
